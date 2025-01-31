@@ -1,13 +1,9 @@
-import TodoItem from "./TodoItem";
+// import TodoItem from "./TodoItem";
 
-function TodoList({ todos, toggleComplete, removeTodo }) {
+function TodoList() {
   return (
-    <ul>
-      {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} toggleComplete={toggleComplete} removeTodo={removeTodo} />
-      ))}
-    </ul>
+   <h1>To-Do-List</h1>
   );
-};
+}
 
 export default TodoList;
