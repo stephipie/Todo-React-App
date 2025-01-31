@@ -5,6 +5,7 @@ import TodoForm from "./TodoForm";
 function TodoList() {
   const [todos, setTodos] = useState([
     { id: 1, text: "todo 1", completed: false },
+    { id: 2, text: "todo 2", completed: false },
   ]);
 
   //function to add a todo
@@ -32,7 +33,7 @@ function TodoList() {
               key={todo.id}
               className="flex items-center justify-start border-t border-gray-300 py-2"
             >
-              <TodoItem todo={todos} />
+              <TodoItem todo={todo} />
             </li>
           ))}
         </ul>
